@@ -4,7 +4,8 @@
  */
 
 * {
-    font-family: "Segoe UI Variable Text", "Segoe UI", sans-serif;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 9pt;
     outline: none;
 }
 
@@ -23,12 +24,12 @@ QMainWindow::separator { background: {{bg-0}}; width: 6px; height: 6px; }
 
 QMenuBar {
     background: {{bg-0}};
-    padding: 4px 6px 0 6px;
+    padding: 2px 4px 0 4px;
     border: none;
 }
 QMenuBar::item {
     background: transparent;
-    padding: 5px 11px;
+    padding: 3px 9px;
     border-radius: 6px;
     color: {{text-muted}};
 }
@@ -43,7 +44,7 @@ QMenu {
 }
 QMenu::item {
     background: transparent;
-    padding: 6px 26px 6px 10px;
+    padding: 4px 24px 4px 8px;
     border-radius: 5px;
     color: {{text}};
 }
@@ -59,18 +60,19 @@ QMenu::right-arrow { image: url({{DIR}}/ui/chevron-right.svg); width: 12px; heig
 /* ---------- Toolbar ---------- */
 
 QToolBar {
+    qproperty-iconSize: 20px 20px;
     background: {{bg-0}};
     border: none;
-    padding: 6px 8px;
-    spacing: 4px;
+    padding: 2px 6px;
+    spacing: 2px;
 }
-QToolBar::separator { background: {{line}}; width: 1px; margin: 6px 6px; }
+QToolBar::separator { background: {{line}}; width: 1px; margin: 4px 5px; }
 
 QToolButton {
     background: transparent;
     border: 1px solid transparent;
-    border-radius: 7px;
-    padding: 5px;
+    border-radius: 6px;
+    padding: 3px;
     color: {{text-muted}};
 }
 QToolButton:hover   { background: {{bg-2}}; border-color: {{line}}; color: {{text}}; }
@@ -87,7 +89,7 @@ QLineEdit, QAbstractSpinBox, QComboBox, QPlainTextEdit, QTextEdit, QDateTimeEdit
     background: {{bg-2}};
     border: 1px solid {{line}};
     border-radius: 7px;
-    padding: 5px 9px;
+    padding: 3px 7px;
     color: {{text}};
     selection-background-color: {{accent-fill}};
     selection-color: {{accent-ink}};
@@ -101,7 +103,7 @@ QLineEdit:disabled, QAbstractSpinBox:disabled, QComboBox:disabled {
 }
 QLineEdit:read-only { background: {{bg-1}}; }
 
-QComboBox { padding-right: 26px; min-height: 18px; }
+QComboBox { padding-right: 24px; }
 QComboBox::drop-down { border: none; width: 24px; subcontrol-position: center right; }
 QComboBox::down-arrow { image: url({{DIR}}/ui/chevron-down.svg); width: 12px; height: 12px; }
 QComboBox::down-arrow:disabled { image: url({{DIR}}/ui/chevron-down-dim.svg); }
@@ -131,9 +133,8 @@ QPushButton {
     background: {{bg-2}};
     border: 1px solid {{line}};
     border-radius: 7px;
-    padding: 6px 14px;
+    padding: 4px 12px;
     color: {{text}};
-    min-height: 16px;
 }
 QPushButton:hover   { background: {{bg-3}}; border-color: {{line-strong}}; }
 QPushButton:pressed { background: {{bg-1}}; }
@@ -148,7 +149,7 @@ QPushButton:checkable {
     background: transparent;
     border: 1px solid transparent;
     color: {{text-muted}};
-    padding: 6px 12px;
+    padding: 3px 10px;
 }
 QPushButton:checkable:hover   { background: {{bg-2}}; color: {{text}}; }
 QPushButton:checkable:checked { background: {{bg-2}}; border-color: {{line-strong}}; color: {{text}}; }
@@ -192,7 +193,7 @@ QAbstractItemView:focus { border-color: {{line-strong}}; }
 
 /* No `color:` on ::item, so qBittorrent's per-state row colours stay intact. */
 QTreeView::item, QListView::item, QTableView::item {
-    padding: 3px 2px;
+    padding: 1px 2px;
     border: none;
 }
 QTreeView::item:hover, QListView::item:hover, QTableView::item:hover { background: {{bg-2}}; }
@@ -206,7 +207,7 @@ QTreeView::branch:has-children:closed { image: url({{DIR}}/ui/chevron-right.svg)
 QTreeView::branch:has-children:open   { image: url({{DIR}}/ui/chevron-down.svg); }
 
 /* Options-dialog page list & sidebar */
-QListWidget::item { padding: 7px 8px; border-radius: 6px; margin: 1px 4px; }
+QListWidget::item { padding: 4px 6px; border-radius: 5px; margin: 0 3px; }
 
 QHeaderView { background: {{bg-1}}; border: none; }
 QHeaderView::section {
@@ -215,7 +216,7 @@ QHeaderView::section {
     border: none;
     border-bottom: 1px solid {{line}};
     border-right: 1px solid {{line}};
-    padding: 6px 8px;
+    padding: 3px 6px;
     font-weight: 600;
 }
 QHeaderView::section:hover { background: {{bg-2}}; color: {{text}}; }
@@ -243,7 +244,7 @@ QTabBar { background: transparent; }
 QTabBar::tab {
     background: transparent;
     color: {{text-muted}};
-    padding: 7px 14px;
+    padding: 5px 12px;
     margin-right: 2px;
     border: 1px solid transparent;
     border-bottom: 2px solid transparent;
@@ -305,7 +306,7 @@ QStatusBar {
 }
 QStatusBar::item { border: none; }
 QStatusBar QLabel, QStatusBar QPushButton { background: transparent; color: {{text-muted}}; }
-QStatusBar QPushButton { border: 1px solid transparent; padding: 3px 8px; }
+QStatusBar QPushButton { border: 1px solid transparent; padding: 1px 6px; }
 QStatusBar QPushButton:hover { background: {{bg-2}}; border-color: {{line}}; color: {{text}}; }
 
 QToolTip {
