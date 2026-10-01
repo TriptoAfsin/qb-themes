@@ -2,12 +2,12 @@
 
 Dark themes for the qBittorrent desktop app, each with a matching set of 88 line icons.
 
-![All six themes](screenshots/overview.png)
+![All nine themes](screenshots/overview.png)
 
 There are two families:
 
 - **Nocturne**: blue-black graphite with one accent color, in five variants: green, blue, red, purple and lime.
-- **ik**: flat monochrome on `#141414`. Only brightness separates active from idle; color is kept for warnings and errors.
+- **Ink**: neutral greys on `#141414` with no color tint, in four variants: mono, orange, sky and rose. In Ink Mono, only brightness separates active from idle, and color is kept for warnings and errors.
 
 Each theme styles the whole app: menus, toolbar, torrent list, sidebar, properties panel, Options dialog, scrollbars, tabs, checkboxes and tooltips. Torrents that are actually moving data are bright, while idle seeds stay quiet, so a long list stays readable.
 
@@ -22,9 +22,12 @@ Tested on qBittorrent 5.2.4 on Windows 11. They should work on any qBittorrent 4
 | Nocturne Red | `#f86974` rose | [`nocturne-red.qbtheme`](dist/nocturne-red.qbtheme) |
 | Nocturne Purple | `#ba93fb` | [`nocturne-purple.qbtheme`](dist/nocturne-purple.qbtheme) |
 | Nocturne Lime | `#bef050` | [`nocturne-lime.qbtheme`](dist/nocturne-lime.qbtheme) |
-| ik | `#f5f5f5` on `#141414` | [`ik.qbtheme`](dist/ik.qbtheme) |
+| Ink Mono | `#f5f5f5` (no hue) | [`ink-mono.qbtheme`](dist/ink-mono.qbtheme) |
+| Ink Orange | `#ff8f49` | [`ink-orange.qbtheme`](dist/ink-orange.qbtheme) |
+| Ink Sky | `#6bcbf7` | [`ink-sky.qbtheme`](dist/ink-sky.qbtheme) |
+| Ink Rose | `#fa86b6` | [`ink-rose.qbtheme`](dist/ink-rose.qbtheme) |
 
-In Nocturne Red, errors are shown in orange so they don't blend into the accent.
+Where an accent would clash with a status color, the status color moves: errors are orange in Nocturne Red and orange-red in Ink Rose, and warnings are yellow in Ink Orange.
 
 <details>
 <summary>Full-size screenshots</summary>
@@ -44,8 +47,17 @@ In Nocturne Red, errors are shown in orange so they don't blend into the accent.
 **Nocturne Lime**
 ![Nocturne Lime](screenshots/nocturne-lime.png)
 
-**ik**
-![ik](screenshots/ik.png)
+**Ink Mono**
+![Ink Mono](screenshots/ink-mono.png)
+
+**Ink Orange**
+![Ink Orange](screenshots/ink-orange.png)
+
+**Ink Sky**
+![Ink Sky](screenshots/ink-sky.png)
+
+**Ink Rose**
+![Ink Rose](screenshots/ink-rose.png)
 
 </details>
 
@@ -74,7 +86,7 @@ python apply.py --revert          # restore your previous settings
 
 Every color comes from one token file per theme in [`themes/`](themes/). Colors are written in OKLCH, so lightness stays even across hues, and `build.py` converts them to hex for Qt.
 
-A Nocturne variant only needs an accent and a seeding color. The darker accent shades are derived automatically:
+A variant only needs an accent; Nocturne variants also set a seeding color that stays clear of it. The darker accent shades are derived automatically. Extend `_ink-base` instead to build on Ink's neutral greys.
 
 ```json
 { "name": "Nocturne Teal", "extends": "_nocturne-base",
