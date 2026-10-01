@@ -1,0 +1,3 @@
+{ "name": "Ink Rose", "extends": "_ink-base",
+  "_comment": "Errors lean orange-red so they stay distinct from the pink accent.",
+  "tokens": { "accent": "oklch(76.0% 0.150 355)", "red": "oklch(72.0% 0.170 38)" } }

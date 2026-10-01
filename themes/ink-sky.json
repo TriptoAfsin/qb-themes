@@ -1,0 +1,2 @@
+{ "name": "Ink Sky", "extends": "_ink-base",
+  "tokens": { "accent": "oklch(80.0% 0.110 230)" } }
