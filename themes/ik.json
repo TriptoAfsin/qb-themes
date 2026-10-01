@@ -1,0 +1,27 @@
+{
+  "name": "ik",
+  "_comment": "Monochrome on #141414. Zero-chroma greys; brightness alone separates active from idle. Only warnings and errors keep colour.",
+  "tokens": {
+    "bg-0":        "#141414",
+    "bg-1":        "#191919",
+    "bg-1-alt":    "#1c1c1c",
+    "bg-2":        "#222222",
+    "bg-3":        "#2b2b2b",
+    "line":        "#262626",
+    "line-strong": "#363636",
+    "text":        "#ededed",
+    "text-muted":  "#a3a3a3",
+    "text-subtle": "#6b6b6b",
+    "accent":      "#f5f5f5",
+    "accent-dim":  "#b0b0b0",
+    "accent-fill": "#5c5c5c",
+    "accent-tint": "#2f2f2f",
+    "accent-ink":  "#141414",
+    "seed":        "#cfcfcf",
+    "seed-idle":   "#9a9a9a",
+    "amber":       "oklch(83.0% 0.140 80)",
+    "red":         "oklch(70.0% 0.170 22)",
+    "done":        "#707070",
+    "icon":        "#d6d6d6"
+  }
+}

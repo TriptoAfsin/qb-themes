@@ -1,0 +1,3 @@
+{ "name": "Nocturne Red", "extends": "_nocturne-base",
+  "_comment": "Accent is a rose-red, so errors shift to a hot orange to stay distinguishable.",
+  "tokens": { "accent": "oklch(70.0% 0.175 18)", "seed": "oklch(80.0% 0.070 245)", "red": "oklch(76.0% 0.160 48)" } }

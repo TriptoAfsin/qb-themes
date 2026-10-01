@@ -1,0 +1,2 @@
+{ "name": "Nocturne Lime", "extends": "_nocturne-base",
+  "tokens": { "accent": "oklch(89.0% 0.190 125)", "seed": "oklch(80.0% 0.085 255)" } }

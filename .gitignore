@@ -1,0 +1,6 @@
+.cache/
+build/
+__pycache__/
+
+# social posts and promo images (local only)
+promo/

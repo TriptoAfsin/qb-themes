@@ -1,0 +1,20 @@
+{
+  "_comment": "Shared Nocturne neutrals: blue-black graphite. Variants set an accent (and a seed colour that stays clear of it); accent-dim/fill/tint/ink are derived by build.py.",
+  "tokens": {
+    "bg-0":        "oklch(15.5% 0.010 265)",
+    "bg-1":        "oklch(18.0% 0.011 265)",
+    "bg-1-alt":    "oklch(19.4% 0.011 265)",
+    "bg-2":        "oklch(22.5% 0.013 265)",
+    "bg-3":        "oklch(26.5% 0.015 265)",
+    "line":        "oklch(26.0% 0.012 265)",
+    "line-strong": "oklch(34.0% 0.014 265)",
+    "text":        "oklch(93.0% 0.008 265)",
+    "text-muted":  "oklch(71.0% 0.015 265)",
+    "text-subtle": "oklch(52.0% 0.015 265)",
+    "seed-idle":   "oklch(76.0% 0.030 255)",
+    "amber":       "oklch(83.0% 0.140 80)",
+    "red":         "oklch(70.0% 0.170 22)",
+    "done":        "oklch(64.0% 0.018 265)",
+    "icon":        "oklch(84.0% 0.012 265)"
+  }
+}

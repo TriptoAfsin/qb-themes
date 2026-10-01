@@ -1,0 +1,2 @@
+{ "name": "Nocturne Purple", "extends": "_nocturne-base",
+  "tokens": { "accent": "oklch(74.0% 0.150 300)", "seed": "oklch(80.0% 0.080 220)" } }
